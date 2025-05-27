@@ -68,7 +68,7 @@ function Signup() {
                         <Input
                         label="Password"
                         type="password"
-                        placeholder="Enter your password"
+                        placeholder="Atleast 8 characters"
                         className="focus:ring-2 focus:ring-indigo-500"
                         {...register("password", {
                             required: true,})}
