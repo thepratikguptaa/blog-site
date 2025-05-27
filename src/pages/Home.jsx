@@ -15,7 +15,7 @@ function Home() {
     }, [])
     if (posts.length === 0) {
         return (
-            <div className="w-full py-16 mt-4 text-center bg-gradient-to-br from-teal-50 to-emerald-50 min-h-screen">
+            <div className="w-full py-16 text-center bg-gradient-to-br from-teal-50 to-emerald-50 min-h-screen">
                 <Container>
                     <div className="flex flex-wrap">
                         <div className="p-2 w-full">

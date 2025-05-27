@@ -34,12 +34,12 @@ function Header() {
       active: authStatus,
   },
   ]
-  return (    <header className='py-4 shadow-lg bg-gradient-to-r from-teal-500 to-emerald-500'>
+  return ( <header className='py-4 bg-gradient-to-r from-teal-500 to-emerald-500'>
       <Container>
         <nav className='flex'>
           <div className='mr-4'>
             <Link to='/' className="transform hover:scale-105 transition-all duration-300">
-              <Logo />
+              <Logo width='50px'/>
             </Link>
           </div>
           <ul className='flex ml-auto items-center space-x-2'>
