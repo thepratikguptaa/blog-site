@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Button component for reuse
 function Button({
     children,    type = 'button',    bgColor = 'bg-teal-600',
     textColor = 'text-white',
