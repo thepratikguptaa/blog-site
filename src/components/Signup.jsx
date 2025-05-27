@@ -25,40 +25,38 @@ function Signup() {
             setError(error.message)
         }
     }
-
-  return (
-    <div className="flex items-center justify-center">
-            <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}>
-            <div className="mb-2 flex justify-center">
-                    <span className="inline-block w-full max-w-[100px]">
+  return (    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-teal-100 to-emerald-100 py-12 px-4 sm:px-6 lg:px-8">
+            <div className={`mx-auto w-full max-w-lg bg-white rounded-2xl p-12 shadow-xl border border-emerald-200/50 backdrop-blur-sm`}>
+            <div className="mb-6 flex justify-center">
+                    <span className="inline-block w-full max-w-[120px] transform hover:scale-105 transition-transform duration-300">
                         <Logo width="100%" />
                     </span>
                 </div>
-                <h2 className="text-center text-2xl font-bold leading-tight">Sign up to create account</h2>
-                <p className="mt-2 text-center text-base text-black/60">
+                <h2 className="text-center text-3xl font-extrabold text-gray-900 mb-8">Create your account</h2>
+                <p className="mt-3 mb-8 text-center text-lg text-gray-600">
                     Already have an account?&nbsp;
                     <Link
                         to="/login"
-                        className="font-medium text-primary transition-all duration-200 hover:underline"
+                        className="font-semibold text-teal-600 hover:text-emerald-500 transition-all duration-200 hover:underline"
                     >
                         Sign In
                     </Link>
                 </p>
-                {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
-
-                <form onSubmit={handleSubmit(create)}>
-                    <div className='space-y-5'>
+                {error && <p className="text-red-600 mb-8 text-center font-medium bg-red-50 py-3 px-4 rounded-lg">{error}</p>}                <form onSubmit={handleSubmit(create)} className="mt-2">
+                    <div className='space-y-6'>
                         <Input
-                        label="Full Name: "
+                        label="Full Name"
                         placeholder="Enter your full name"
+                        className="focus:ring-2 focus:ring-indigo-500"
                         {...register("name", {
                             required: true,
                         })}
                         />
                         <Input
-                        label="Email: "
+                        label="Email"
                         placeholder="Enter your email"
                         type="email"
+                        className="focus:ring-2 focus:ring-indigo-500"
                         {...register("email", {
                             required: true,
                             validate: {
@@ -68,13 +66,17 @@ function Signup() {
                         })}
                         />
                         <Input
-                        label="Password: "
+                        label="Password"
                         type="password"
                         placeholder="Enter your password"
+                        className="focus:ring-2 focus:ring-indigo-500"
                         {...register("password", {
                             required: true,})}
                         />
-                        <Button type="submit" className="w-full">
+                        <Button 
+                            type="submit" 
+                            className="w-full bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 transform hover:scale-[1.02] transition-all duration-300 py-3 text-lg font-semibold text-white rounded-lg shadow-md"
+                        >
                             Create Account
                         </Button>
                     </div>
