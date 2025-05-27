@@ -25,7 +25,7 @@ function Home() {
                             <p className="text-xl text-teal-600 mb-8">
                                 Login to discover amazing posts from our community
                             </p>
-                            <div className="animate-bounce">
+                            <div className="animate-bounce m-12">
                                 <Link to="/login" 
                                     className="inline-block px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-teal-500 to-emerald-500 rounded-lg hover:from-teal-600 hover:to-emerald-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
                                     Get Started
