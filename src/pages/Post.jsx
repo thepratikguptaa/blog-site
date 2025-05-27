@@ -33,11 +33,11 @@ export default function Post() {
     };
 
     return post ? (
-        <div className="py-8">
+        <div className="py-8 bg-teal-50 min-h-screen">
             <Container>
                 <div className="w-full flex justify-center mb-4 relative border rounded-xl p-2">
                     <img
-                        src={appwriteService.getFilePreview(post.featuredImage)}
+                        src={appwriteService.getFilePreview(post.featuredImage).toString()}
                         alt={post.title}
                         className="rounded-xl"
                     />
