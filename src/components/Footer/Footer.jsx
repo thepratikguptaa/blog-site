@@ -4,7 +4,7 @@ import Logo from '../Logo'
 
 function Footer() {
   return (    
-    <section className="relative overflow-hidden py-10 bg-gradient-to-r from-teal-500 to-emerald-500">
+    <section className="relative overflow-hidden py-10 bg-gradient-to-r from-teal-500 to-emerald-500 border-t-2 border-white/20">
             <div className="relative z-10 mx-auto max-w-7xl px-4">
                 <div className="-m-6 flex flex-wrap">
                     <div className="w-full p-6 md:w-1/2 lg:w-5/12">
@@ -27,7 +27,7 @@ function Footer() {
                             <ul>
                                 <li className="mb-4">
                                     <Link
-                                        className="text-base font-medium text-white/80 hover:text-white transition-colors duration-200"
+                                        className="text-base font-medium text-white/80 hover:text-white hover:underline transition-all duration-200 cursor-pointer"
                                         to="/"
                                     >
                                         Features
@@ -35,7 +35,7 @@ function Footer() {
                                 </li>
                                 <li className="mb-4">
                                     <Link
-                                        className="text-base font-medium text-white/80 hover:text-white transition-colors duration-200"
+                                        className="text-base font-medium text-white/80 hover:text-white hover:underline transition-all duration-200 cursor-pointer"
                                         to="/"
                                     >
                                         Pricing
@@ -43,7 +43,7 @@ function Footer() {
                                 </li>
                                 <li className="mb-4">
                                     <Link
-                                        className="text-base font-medium text-white/80 hover:text-white transition-colors duration-200"
+                                        className="text-base font-medium text-white/80 hover:text-white hover:underline transition-all duration-200 cursor-pointer"
                                         to="/"
                                     >
                                         Affiliate Program
@@ -51,7 +51,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        className="text-base font-medium text-white/80 hover:text-white transition-colors duration-200"
+                                        className="text-base font-medium text-white/80 hover:text-white hover:underline transition-all duration-200 cursor-pointer"
                                         to="/"
                                     >
                                         Press Kit
@@ -68,7 +68,7 @@ function Footer() {
                             <ul>
                                 <li className="mb-4">
                                     <Link
-                                        className="text-base font-medium text-white/80 hover:text-white transition-colors duration-200"
+                                        className="text-base font-medium text-white/80 hover:text-white hover:underline transition-all duration-200 cursor-pointer"
                                         to="/"
                                     >
                                         Account
@@ -76,7 +76,7 @@ function Footer() {
                                 </li>
                                 <li className="mb-4">
                                     <Link
-                                        className="text-base font-medium text-white/80 hover:text-white transition-colors duration-200"
+                                        className="text-base font-medium text-white/80 hover:text-white hover:underline transition-all duration-200 cursor-pointer"
                                         to="/"
                                     >
                                         Help
@@ -84,7 +84,7 @@ function Footer() {
                                 </li>
                                 <li className="mb-4">
                                     <Link
-                                        className="text-base font-medium text-white/80 hover:text-white transition-colors duration-200"
+                                        className="text-base font-medium text-white/80 hover:text-white hover:underline transition-all duration-200 cursor-pointer"
                                         to="/"
                                     >
                                         Contact Us
@@ -92,7 +92,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        className="text-base font-medium text-white/80 hover:text-white transition-colors duration-200"
+                                        className="text-base font-medium text-white/80 hover:text-white hover:underline transition-all duration-200 cursor-pointer"
                                         to="/"
                                     >
                                         Customer Support
@@ -109,7 +109,7 @@ function Footer() {
                             <ul>
                                 <li className="mb-4">
                                     <Link
-                                        className="text-base font-medium text-white/80 hover:text-white transition-colors duration-200"
+                                        className="text-base font-medium text-white/80 hover:text-white hover:underline transition-all duration-200 cursor-pointer"
                                         to="/"
                                     >
                                         Terms &amp; Conditions
@@ -117,7 +117,7 @@ function Footer() {
                                 </li>
                                 <li className="mb-4">
                                     <Link
-                                        className="text-base font-medium text-white/80 hover:text-white transition-colors duration-200"
+                                        className="text-base font-medium text-white/80 hover:text-white hover:underline transition-all duration-200 cursor-pointer"
                                         to="/"
                                     >
                                         Privacy Policy
@@ -125,7 +125,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        className="text-base font-medium text-white/80 hover:text-white transition-colors duration-200"
+                                        className="text-base font-medium text-white/80 hover:text-white hover:underline transition-all duration-200 cursor-pointer"
                                         to="/"
                                     >
                                         Licensing

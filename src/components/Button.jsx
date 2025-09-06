@@ -25,7 +25,7 @@ function Button({
     <>
       {loading && <LoaderComponent />}
       <button 
-        className={`w-full transform hover:scale-[1.02] transition-all duration-300 py-3 text-lg font-semibold text-white rounded-lg shadow-md ${bgColor} ${textColor} ${className}`}
+        className={`w-full transform hover:scale-[1.02] transition-all duration-300 py-3 text-lg font-semibold rounded-lg shadow-md cursor-pointer hover:shadow-lg ${bgColor} ${textColor} ${className}`}
         type={type} 
         {...props}
         onClick={handleClick}

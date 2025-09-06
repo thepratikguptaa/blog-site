@@ -34,7 +34,7 @@ function Header() {
       active: authStatus,
   },
   ]
-  return ( <header className='py-4 bg-gradient-to-r from-teal-500 to-emerald-500'>
+  return ( <header className='py-4 bg-gradient-to-r from-teal-500 to-emerald-500 shadow-lg'>
       <Container>
         <nav className='flex'>
           <div className='mr-4'>
@@ -48,7 +48,7 @@ function Header() {
               <li key={item.name}>
                 <button
                 onClick={() => navigate(item.slug)}
-                className='inline-block px-6 py-2 duration-200 text-white hover:bg-white/20 rounded-full font-medium'
+                className='inline-block px-6 py-2 duration-300 text-white hover:bg-white/30 rounded-full font-semibold transition-all cursor-pointer'
                 >{item.name}</button>
               </li>
             ) : null

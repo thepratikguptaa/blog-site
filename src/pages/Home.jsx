@@ -27,7 +27,7 @@ function Home() {
                             </p>
                             <div className="animate-bounce m-12">
                                 <Link to="/login" 
-                                    className="inline-block px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-teal-500 to-emerald-500 rounded-lg hover:from-teal-600 hover:to-emerald-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                                    className="inline-block px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-teal-500 to-emerald-500 rounded-lg hover:from-teal-600 hover:to-emerald-600 transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer">
                                     Get Started
                                 </Link>
                             </div>
@@ -42,7 +42,7 @@ function Home() {
                 <h1 className="text-4xl font-bold text-center text-teal-800 mb-12">Latest Posts</h1>
                 <div className='flex flex-wrap -mx-4'>
                     {posts.map((post) => (
-                        <div key={post.$id} className='p-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4 transform transition-all duration-300 hover:scale-105'>
+                        <div key={post.$id} className='p-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4'>
                             <PostCard {...post} />
                         </div>
                     ))}

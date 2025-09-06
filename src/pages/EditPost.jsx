@@ -20,12 +20,13 @@ function EditPost() {
         }
     }, [slug, navigate])
   return post ? (
-    <div className='py-8'>
+    <div className='py-12 bg-gradient-to-br from-teal-50 to-emerald-50 min-h-screen'>
         <Container>
+            <h1 className="text-4xl font-bold text-center text-teal-800 mb-12">Edit Post</h1>
             <PostForm post={post} />
         </Container>
     </div>
-  ) : null;
+  ) : null
 }
 
 export default EditPost

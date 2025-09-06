@@ -47,7 +47,7 @@ function Signup() {
                         <Input
                         label="Full Name"
                         placeholder="Enter your full name"
-                        className="focus:ring-2 focus:ring-indigo-500"
+                        className="focus:ring-2 focus:ring-teal-500"
                         {...register("name", {
                             required: true,
                         })}
@@ -56,7 +56,7 @@ function Signup() {
                         label="Email"
                         placeholder="Enter your email"
                         type="email"
-                        className="focus:ring-2 focus:ring-indigo-500"
+                        className="focus:ring-2 focus:ring-teal-500"
                         {...register("email", {
                             required: true,
                             validate: {
@@ -68,8 +68,8 @@ function Signup() {
                         <Input
                         label="Password"
                         type="password"
-                        placeholder="Atleast 8 characters"
-                        className="focus:ring-2 focus:ring-indigo-500"
+                        placeholder="Password (atleast 8 characters)"
+                        className="focus:ring-2 focus:ring-teal-500"
                         {...register("password", {
                             required: true,})}
                         />
